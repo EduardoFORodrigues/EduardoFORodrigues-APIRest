@@ -6,5 +6,14 @@ class UsuarioController{
     obter(req,res){
         return res.json([{id:1, nome:"Eduardo"}])
     }
+    adicionar(res, rea){
+
+    }
+    atuaalizar(res,req){
+
+    }
+    inativar(res,req){
+
+    }
 }
 module.exports = UsuarioController;
