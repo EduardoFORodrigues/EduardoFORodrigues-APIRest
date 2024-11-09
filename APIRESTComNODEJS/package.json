@@ -6,8 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "criar-banco": "yarn sequelize db:create",
     "criar-migration": "yarn sequelize migration:create --name=criar-tabela-xyz",
-    "executar-migration": "yarn sequelize db:create",
-    "desfazer-migration": "yarn sequelize db:create:undo"
+    "executar-migration": "yarn sequelize db:migrate",  
+    "desfazer-migration": "yarn sequelize db:migrate:undo"
   },
   "author": "",
   "license": "ISC",

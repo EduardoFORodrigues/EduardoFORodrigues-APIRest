@@ -1,0 +1,11 @@
+import { config } from 'dotenv';
+
+require('dotenv').config();
+const path=  require('path');
+
+
+module.exports = {
+
+    config:path.resolve(__dirname,'src','config', 'database.js'),
+    'migrations.js':path.resolve(_dirname,'src','database', 'migrations'),
+}

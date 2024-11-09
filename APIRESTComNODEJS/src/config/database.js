@@ -1,7 +1,12 @@
 // CONFIGURANDO AMBIENTE
 let ambiente = undefined;
 switch(process.env.PUBLICAR){
-    case "HTML": ambiente = configurarHML();
+    case "HTML": 
+    ambiente = configurarHML();
+    break;
+    case 'PROD':
+        ambiente = configurarPROD();
+    break;
 }
 
 
