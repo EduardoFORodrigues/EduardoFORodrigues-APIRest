@@ -13,3 +13,5 @@ HML_Port= 27017
 3- criar configuração de sequelize na pasta config, criando um arquivo database.
 
 4- criar o arquivo .sequelizerc na raiz do projeto.
+
+#Ficar atento aos detalhes de estrutura de pasta
