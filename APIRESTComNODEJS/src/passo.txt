@@ -11,3 +11,5 @@ HML_DATABASE = POSTS
 HML_Port= 27017
 
 3º Criar configuração de seuqelize na pasta criando um arquivo database.
+
+4° Criar o arquivo .sequelizerc na raiz do projeto.
