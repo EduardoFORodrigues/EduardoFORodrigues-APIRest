@@ -6,14 +6,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "criar-banco": "yarn sequelize db:create",
     "criar-migration": "yarn sequelize migration:create --name=criar-tabela-xyz",
-    "executar-migration": "yarn sequelize db:create",
-    "desfazer-migration": "yarn sequelize db:create:undo"
+    "executar-migration": "yarn sequelize db:migrate",
+    "desfazer-migration": "yarn sequelize db:migrate:undo"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "dotenv": "^16.4.5",
+    "nodemon": "^3.1.7",
     "pg": "^8.13.1",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.5",

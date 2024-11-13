@@ -1,0 +1,13 @@
+configurando o banco.
+1º Instalar as dependencias do (pg, pg-hstore, sequelize e sequelize-cli)
+2º Criar as constantes no .env
+
+#Banco de dados a ser utilizado
+HML_DIALECT = mongoDB
+HML_HOST = localhost
+HML_USER_NAME =admin
+HML_PASSWORD = dudazn30
+HML_DATABASE = POSTS
+HML_Port= 27017
+
+3º Criar configuração de seuqelize na pasta criando um arquivo database.
