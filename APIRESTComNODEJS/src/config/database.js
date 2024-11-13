@@ -1,6 +1,7 @@
 //const { underscoredIf } = require("sequelize/lib/utils");
 let ambiente = undefined;
 switch(process.env.PUBLICAR){
+<<<<<<< HEAD
 
     case "HML" : ambiente = configurarHML();
         break;     
@@ -13,6 +14,15 @@ switch(process.env.PUBLICAR){
 
 // CONFIGURANDO AMBIENTE
 
+=======
+    case "HTML": 
+    ambiente = configurarHML();
+    break;
+    case 'PROD':
+        ambiente = configurarPROD();
+    break;
+}
+>>>>>>> origin
 
 
 //ambiente de Homolocação
@@ -20,6 +30,7 @@ function configurardoHML(){
 
     return{
         dialect:process.env.HML_DIALECT,
+<<<<<<< HEAD
         host:process.env.HML_HOST,
         port:process.env.HML_PORT,
         username:process.env.HML_USER_NAME,
@@ -29,6 +40,18 @@ function configurardoHML(){
             timestamps:true,
             underscored:true,
         }
+=======
+        host:process.env.HTML_HOST,
+        port:process.env.HTML_PORT,
+        username:process.env.HTML_USER_NAME,
+        password:process.env.HTML_PASSWORD,
+        database:process.env.Html_DATABASE,
+        define:{
+            timestamps:true,
+            undercored:true,
+        }
+        
+>>>>>>> origin
     
     }
 }
@@ -44,10 +67,19 @@ function configurarPROD(){
         database:process.env.PROD_DATABASE,
         define:{
             timestamps:true,
+<<<<<<< HEAD
             underscored:true,
         }
     
     }
+=======
+            undercored:true,
+        }
+        
+    
+    }
+
+>>>>>>> origin
 }
 
 
@@ -65,9 +97,20 @@ function configurarLOCAL(){
         database:process.env.LOCAL_DATABASE,
         define:{
             timestamps:true,
+<<<<<<< HEAD
             underscored:true,
         }
 
  }
 }
+=======
+            undercored:true,
+        }
+        
+    
+    }
+
+}
+
+>>>>>>> origin
 module.exports = ambiente;

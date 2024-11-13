@@ -6,7 +6,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "criar-banco": "yarn sequelize db:create",
     "criar-migration": "yarn sequelize migration:create --name=criar-tabela-xyz",
+<<<<<<< HEAD
     "executar-migration": "yarn sequelize db:migrate",
+=======
+    "executar-migration": "yarn sequelize db:migrate",  
+>>>>>>> origin
     "desfazer-migration": "yarn sequelize db:migrate:undo"
   },
   "author": "",
